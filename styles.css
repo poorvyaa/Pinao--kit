@@ -1,0 +1,78 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background-image: linear-gradient(to right, rgb(68, 68, 138) ,rgb(7, 0, 99),rgb(46, 46, 212));
+}
+#title{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-family: Italic;
+    padding: 40px;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.piano {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.white-key {
+    width: 9%;
+    min-width: 60px;
+    height: 70%;
+    background-color: white;
+    border: 1px solid rgb(17, 0, 0);
+    color: black;
+
+  
+}
+.black-key {
+    width: 8%;
+    height: 45%;
+    margin-left: -4%;
+    margin-right: -4%;
+    z-index: 2;
+    background-color: black;
+    color: white;
+ 
+}
+.white-key.active{
+    background-color: #ccc;
+}
+.black-key.active{
+    background-color: #333;
+}
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+
+@media screen and (min-width:320px)and (max-width:1024px){
+ #title{
+    font-size: 1.5rem;
+}   
+.piano{
+    height: 50vh;
+    width:100%;
+    padding: auto;
+}
+}
+
